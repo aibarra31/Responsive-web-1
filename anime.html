@@ -2,41 +2,44 @@
 <html lang="en">
   <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="styles/desktop.css">
+      <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 480)">
+      <link rel="stylesheet" href="styles/main.css" media="(max-width: 1024px)">
+      <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 480px )">
+      <link rel="stylesheet" href="styles/reset.css">
+      <title> Japanese Anime</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
           <!--Put logo here  -->
           <img class="logo" src="images/logo.png">
-        <h1> Anime I Like</h1>
+          <nav>
+              <ul>
+                  <li><a href="picture6.html">DragonballS
+                  </a></li>
+                  <li><a href="picture3.html">Naruto</a> </li>
+                  <li><a href="picture2.html">Bleach</a></li>
+                  <li><a href="picture5.html">One Punch Man</a></li>
+                   <!--put image here  -->
+              </ul>
+          </nav>
+
+
       </header>
       <div class="flex-content">
+        <h1> Anime I Like</h1>
         <!--Put carousel picture here  -->
-        <img src="images/dragonballS.jpg">
-        <img src="images/Naruto.jpg">
-        <img src="images/bleach.jpg">
-        <img src="images/onepunchman.jpg">
-        <div class="content1">
-        <article class="main">
+        <img src="images/picture6.jpeg">
+        <img src="images/picture2.jpeg">
+        <img src="images/picture3.jpeg">
+        <img src="images/picture5.jpeg">
+        <section class="content1">
+          <article class="main">
              <!--Put article here  -->
              <p>Anime (Japanese: アニメ?, [anime] ( listen))[a] is Japanese hand-drawn or computer animation. The word is the abbreviated pronunciation of "animation" in Japanese, where this term references all animation.[1] Outside Japan, anime is used to refer specifically to animation from Japan or as a Japanese-disseminated animation style often characterized by colorful graphics, vibrant characters and fantastical themes.[2][3] Arguably, the stylization approach to the meaning may open up the possibility of anime produced in countries other than Japan.[4][5][6] For simplicity, many Westerners strictly view anime as an animation product from Japan.[3] Some scholars suggest defining anime as specifically or quintessentially Japanese may be related to a new form of orientalism.[7]</p>
-          </article>
-          <aside class="sidebar1">
-            <h2>Index</h2>
-            <nav>
-                <ul>
-                    <li><a href="DragonballS.html">DragonballS
-                    </a></li>
-                    <li><a href="Naruto.html">Naruto</a> </li>
-                    <li><a href="Bleach.html">Bleach</a></li>
-                    <li><a href="Onepunchman.html">One Punch Man</a></li>
-                     <!--put image here  -->
-                    <img src="images/anime.jpg">
-                </ul>
-            </nav>
-          </aside>
-        </div>
+           </article>
+         </section>
+
       </div>
     </div>
   </body>
