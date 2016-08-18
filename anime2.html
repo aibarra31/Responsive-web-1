@@ -18,28 +18,47 @@
           padding: 0;
         }
 
-        header {
-          background-color: blue;
-        }
-
-        nav {
-          background-color: green
-
-        }
 
         li {
 
           list-style: none;
         }
 
+
         .button1 {
+          border-radius: 20px 20px 20px 20px;
+          color: antiquewhite;
           border: 1px solid black;
           position: relative;
           font-style: italic;
           margin: 1em;
           padding: 1em;
-          background-color: skyblue;
+          background-color: #3366FF;
+          transition-property: background-color;
+          transition-duration: 1s;
         }
+
+        .button1:hover {
+          background-color: magenta;
+        }
+
+        @keyframes logo {
+        from {
+          transform: rotate(0) scale(.5);
+          right: 100%;}
+          50% {
+          transform:  rotate(-760deg) scale(.5);
+          right: 0;
+          to {
+            transform: rotate(0) scale(1);
+          }
+
+        }
+}
+        .logo {
+        animation: logo 5s;
+        }
+
         .main {
           background-color: red;
         }
@@ -79,16 +98,13 @@
           align-items: center;
         }
 
-        .button1 {
-
-        }
 
 
 
       </style>
   </head>
-<body>
-    <header class="head1">
+<body background="images/picture4.jpeg">
+    <header  class="head1">
         <img class ="logo" src="images/logo.png">
         <nav>
           <ul class="button">
