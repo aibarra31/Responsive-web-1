@@ -29,24 +29,45 @@
         flex-grow: 1;
       }
 
-.anime {
+section.main {
   display:flex;
   flex-flow: row;
   min-height: 70%;
 }
 
-.anime > article {
+.main article {
   background-color: red;
   width: 50%;
+  flex: 1 0;
+}
+
+.anime {
+/*display: flex;*/
+border: 0 solid green;
+overflow: hidden;
+width: 50%;
 }
 
 .anime1 {
-  position: relative;;
-  width: 50%;
-  /*overflow: hidden;*/
-  -moz-animation:anime 10s infinite;
--webkit-animation:anime 10s infinite;
-animation:anime 10s infinite;
+-moz-animation:anime 15s infinite;
+-webkit-animation:anime 15s infinite;
+animation:anime 15s infinite;
+animation-direction: alternate-reverse;
+width: 2800px;
+margin: 0;
+padding: 0;
+position: relative;
+
+}
+
+.anime1 img {
+  /*flex: 1 0 25%;*/
+  width: 25%;
+  height: 70vh;
+  display: inline-block;
+  margin-right:-.5em;
+  margin-bottom: -1em;
+  overflow: hidden;
 }
 
 footer {
@@ -55,29 +76,30 @@ footer {
   min-height: 10%;
 }
 
-aside > img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-
-}
 @keyframes anime {
     0%    { left:0; }
     10%   { left:0; }
-    20% { left:-50%; }
-    30% { left:-50%; }
-    40%   { left:-100%; }
-    50%   { left:-100%; }
-    60% { left:-200%; }
-    70% { left:-200%; }
+    20% { left:-100%; }
+    30% { left:-100%; }
+    40%   { left:-200%; }
+    50%   { left:-200%; }
+    60% { left:-300%; }
+    70% { left:-300%; }
     80% { left:0; }
 }
 
-.anime aside img {
-  margin: 1px;
-  padding: 1px
-}
-@keyframes logo {
+/*@keyframes anime {
+      0%    { left:0; }
+      15%   { left:0; }
+      30% { left:-100%; }
+      45% { left:-100%; }
+      60%   { left:-200%; }
+      75%   { left:-200%; }
+      90% { left:-300%; }
+      100% { left: -300%}
+  }*/
+
+/*@keyframes logo {
   from {
     transform: rotate(0) scale(.5);
 right: 100% }
@@ -89,11 +111,11 @@ right: 100% }
     transform: rotate(0) scale(1);
 } }
 .logo {
-	-webkit-animation: logo 5s;
-	-moz-animation: logo 5s;
-	-o-animation: logo 5s;
-	animation: logo 5s;
-}
+  -webkit-animation: logo 5s;
+  -moz-animation: logo 5s;
+  -o-animation: logo 5s;
+  animation: logo 5s;
+}*/
 
       </style>
   </head>
@@ -109,16 +131,17 @@ right: 100% }
           </ul>
         </nav>
     </header>
-    <section class="anime">
+    <section class="main">
         <article> <p>Anime (Japanese: アニメ?, [anime] ( listen))[a] is Japanese hand-drawn or computer animation. The word is the abbreviated pronunciation of "animation" in Japanese, where this term references all animation.[1] Outside Japan, anime is used to refer specifically to animation from Japan or as a Japanese-disseminated animation style often characterized by colorful graphics, vibrant characters and fantastical themes.[2][3] Arguably, the stylization approach to the meaning may open up the possibility of anime produced in countries other than Japan.[4][5][6] For simplicity, many Westerners strictly view anime as an animation product from Japan.[3] Some scholars suggest defining anime as specifically or quintessentially Japanese may be related to a new form of orientalism.[7]</p>
         </article>
-
-        <aside class="anime1">
-          <img src="images/picture6.jpeg">
-          <img src="images/picture2.jpeg">
-          <img src="images/picture3.jpeg">
-          <img src="images/picture5.jpeg">
-        </aside>
+        <section class="anime">
+          <aside class="anime1">
+            <img src="images/picture6.jpeg" alt="">
+            <img src="images/picture2.jpeg" alt="">
+            <img src="images/picture3.jpeg" alt="">
+            <img src="images/picture5.jpeg" alt="">
+          </aside>
+        </section>
     </section>
 
     <footer>
