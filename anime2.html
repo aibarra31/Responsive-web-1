@@ -6,128 +6,96 @@
       <link rel="stylesheet" href="styles/main.css" media="(max-width: 1024px)">
       <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 480px )">
       <link rel="stylesheet" href="styles/reset.css"> -->
+      <title>This is Anime</title>
       <style>
       * {
         box-sizing: border-box;
-      }
-      body {
-        background-color: tan;
-        font-style: italic;
-        height: 100vh;
-        overflow: hidden;
-        margin: 0;
-        padding: 0;
-      }
+        }
+        body {
+          background-color: tan;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+        }
 
-      ul {
-        display: flex;
-      }
+        header {
+          background-color: blue;
+        }
 
-      ul li {
-        flex-flow: row;
-        list-style-type: none;
-        flex-grow: 1;
-      }
+        nav {
+          background-color: green
 
-section.main {
-  display:flex;
-  flex-flow: row;
-  min-height: 70%;
-}
+        }
 
-.main article {
-  background-color: red;
-  width: 50%;
-  flex: 1 0;
-}
+        li {
 
-.anime {
-/*display: flex;*/
-border: 0 solid green;
-overflow: hidden;
-width: 50%;
-}
+          list-style: none;
+        }
 
-.anime1 {
--moz-animation:anime 15s infinite;
--webkit-animation:anime 15s infinite;
-animation:anime 15s infinite;
-animation-direction: alternate-reverse;
-width: 2800px;
-margin: 0;
-padding: 0;
-position: relative;
+        .button1 {
+          border: 1px solid black;
+          position: relative;
+          font-style: italic;
+          margin: 1em;
+          padding: 1em;
+          background-color: skyblue;
+        }
+        .main {
+          background-color: red;
+        }
 
-}
+        .anime {
+          background-color: purple;
+        }
 
-.anime1 img {
-  /*flex: 1 0 25%;*/
-  width: 25%;
-  height: 70vh;
-  display: inline-block;
-  margin-right:-.5em;
-  margin-bottom: -1em;
-  overflow: hidden;
-}
+        footer {
+          background-color: teal;
+        }
+          /* adding flex to css*/
+        body {
+          display: flex;
+          flex-direction: column;
+        }
+        header {
+          display: flex;
+          flex-direction: row;
+        }
 
-footer {
-  display: flex;
-  background-color: green;
-  min-height: 10%;
-}
 
-@keyframes anime {
-    0%    { left:0; }
-    10%   { left:0; }
-    20% { left:-100%; }
-    30% { left:-100%; }
-    40%   { left:-200%; }
-    50%   { left:-200%; }
-    60% { left:-300%; }
-    70% { left:-300%; }
-    80% { left:0; }
-}
+        nav {
+          display: flex;
+          width: 100%;
+          text-align: center;
+        }
 
-/*@keyframes anime {
-      0%    { left:0; }
-      15%   { left:0; }
-      30% { left:-100%; }
-      45% { left:-100%; }
-      60%   { left:-200%; }
-      75%   { left:-200%; }
-      90% { left:-300%; }
-      100% { left: -300%}
-  }*/
+        .button {
+          display: flex;
+          width: 100%;
+          align-items: center;
+        }
 
-/*@keyframes logo {
-  from {
-    transform: rotate(0) scale(.5);
-right: 100% }
-  50% {
-    transform: rotate(-1040deg) scale(.5);
-    right: 0;
-}
-  to {
-    transform: rotate(0) scale(1);
-} }
-.logo {
-  -webkit-animation: logo 5s;
-  -moz-animation: logo 5s;
-  -o-animation: logo 5s;
-  animation: logo 5s;
-}*/
+        li {
+          flex: 1 0 auto;
+          align-items: center;
+        }
+
+        .button1 {
+
+        }
+
+
 
       </style>
   </head>
 <body>
-    <header>
+    <header class="head1">
+        <img class ="logo" src="images/logo.png">
         <nav>
-          <ul>
-            <li><img class ="logo" src="images/logo.png"></li>
-            <li><a href="#">Dragonball S</a></li>
-            <li><a href="#">Naruto</a></li>
-            <li><a href="#">Bleach</a></li>
-            <li><a href="#">One Punch Man</a></li>
+          <ul class="button">
+            <li><a class="button1" href="#">Dragonball S</a></li>
+            <li><a class="button1" href="#">Naruto</a></li>
+            <li><a class="button1" href="#">Bleach</a></li>
+            <li><a class="button1" href="#">One Punch Man</a></li>
           </ul>
         </nav>
     </header>
@@ -143,8 +111,8 @@ right: 100% }
           </aside>
         </section>
     </section>
-
     <footer>
-
+      <article>article</article>
     </footer>
 </body>
+</html>
