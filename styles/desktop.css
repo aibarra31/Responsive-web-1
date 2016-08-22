@@ -1,176 +1,177 @@
-/* Put your reset styles here */
-     /* Put styles for desktop and basic styles for all devices here */
-     */
+* {
+  box-sizing: border-box;
+  }
+  body {
+    background-color: tan;
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+  }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Start CSS Style Here */
 
-/*@-webkit-keyframes logo {
-	from {
-		-webkit-transform: rotate(0) scale(.5);
-		left: 200%;
-	}
-	50% {
-		-webkit-transform: rotate(-1040deg) scale(.5);
-		left: 0;
-	}
-	to {
-		-webkit-transform: rotate(0) scale(1);
-	}
+  li {
+
+    list-style: none;
+  }
+
+
+  .button1 {
+    border-radius: 20px 20px 20px 20px;
+    color: antiquewhite;
+    border: 1px solid black;
+    position: relative;
+    font-style: italic;
+    margin: 1em;
+    padding: 1em;
+    background-color: #3366FF;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: transform .5s,
+  }
+
+  .button1:hover {
+    background-color: magenta;
+
+           background-color 1s ease-in .5s;
+           -webkit-transform:scale(1.2);
+                  -moz-transform: scale(1.2);
+                  -o-transform: scale(1.2);
+                  -ms-transform:  scale(1.2);
+                  transform: scale(1.2);
+           }
+}
+@-webkit-keyframes logo {
+from {
+-webkit-transform: rotate(0) scale(.5);
+left: 120%;
+}
+50% {
+-webkit-transform: rotate(-720deg) scale(.5);
+left: 0;
+}
+to {
+-webkit-transform: rotate(0) scale(1);
+}
 
 }
- @-moz-keyframes logo {
-     from {
-       -moz-transform: rotate(0) scale(.5);
-left: 200% }
-     50% {
-       -moz-transform: rotate(-1040deg) scale(.5);
-       left: 0;
-		 }
+@-moz-keyframes logo {
+from {
+ -moz-transform: rotate(0) scale(.5);
+left: 120% }
+50% {
+ -moz-transform: rotate(-720deg) scale(.5);
+ left: 0;
 }
- to {
-    -moz-transform: rotate(0) scale(1);
-} }*/
-/*@-o-keyframes logo {
-  from {
-    -o-transform: rotate(0) scale(.5);
-left: 200% }
-  50% {
-    -o-transform: rotate(-1040deg) scale(.5);
-    left: 0;
 }
-  to {
-    -o-transform: rotate(0) scale(1);
-} }*/
-@keyframes logo {
-  from {
-    transform: rotate(0) scale(.5);
-right: 100% }
-  50% {
-    transform: rotate(-1040deg) scale(.5);
-    right: 0;
-}
-  to {
-    transform: rotate(0) scale(1);
+to {
+-moz-transform: rotate(0) scale(1);
 } }
+@-o-keyframes logo {
+from {
+-o-transform: rotate(0) scale(.5);
+left: 120% }
+50% {
+-o-transform: rotate(-720deg) scale(.5);
+left: 0;
+}
+to {
+-o-transform: rotate(0) scale(1);
+} }
+@keyframes logo {
+from {
+transform: rotate(0) scale(.5);
+left: 120% }
+50% {
+transform: rotate(-720deg) scale(.5);
+left: 0;
+}
+to {
+transform: rotate(0) scale(1);
+} }
+
 .logo {
-	-webkit-animation: logo 5s;
-	-moz-animation: logo 5s;
-	-o-animation: logo 5s;
-	animation: logo 5s;
-}
-body {
-  background-color: tan;
-  flex: 0;
+-webkit-animation: logo 3s;
+-moz-animation: logo 3s;
+-o-animation: logo 3s;
+animation: logo 3s;
 }
 
-h1 {
-  font-style: italic;
-  color: blue;
-  display: flex;
-}
-/* Small Screen*/
-@@media (max-width: 480) {
- /*.flex-content: hidden;*/
+  .main {
+    background-color: red;
+  }
+
+  /*.anime {
+    background-color: purple;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 1200px;
+
+  }
+
+.anime1 {
+  position: absolute;
+  width: 50%;
 
 }
-  /* Medium Screen */
-@@media (min-width: 480) (max-width: 1024) {
- body {
-
- }
-}
-
-@@media (max-width: 1024) {
- body {
-
- }
-}
-/*img {
-  width: 300px;
-  height: 300px;
-  margin: 0;
-  padding: 0;
+.anime1 img {
+  position: relative;
+  height: 50vh;
+  width: 50%;
+  flex: 1;
 }*/
-header {
-  background-color: tan;
-}
 
-picture {
+  }
+  footer {
+    background-color: teal;
+  }
+    /* adding flex to css*/
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2em;
+  }
 
-flex-flow: column;
-}
-.flex-content img {
 
-position: absolute;
-  width: 300px;
-  height: 300px;
-  margin: 0;
-  padding: 0;
-  display: flex;
+  nav {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
 
-/*.content1 {
-  display: flex;
-  flex-direction: row-reverse;*/
+  .button {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
 
-}
-@keyframes anime {
-    0%    { left:0; }
-    5%   { left:0; }
-    10% { left:-100%; }
-    15% { left:-100%; }
-    20%   { left:-200%; }
-    25%   { left:-200%; }
-    30% { left:-300%; }
-    35% { left:-300%; }
-    36% { left:0; }
-}
+  li {
+    flex: 1 0 auto;
+    align-items: center;
+  }
+  section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+  }
+  section >article {
+    width: 50%;
+    flex: 1 0 auto;
+  }
 
-.sidebar1 {
-  flex-shrink:
-}
-.main {
-  display: flex;
-}
+  /*.anime {
+    display: flex;
+    width: 50%;
+    flex: 1 0 auto;
+  }
+
+  .anime1 {
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 auto;
+  }*/
