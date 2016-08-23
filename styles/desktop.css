@@ -3,8 +3,7 @@
 }
 body {
   background-color: tan;
-  font-style: italic;
-  height: 100vh;
+  height: 120vh;
   /*overflow: hidden;*/
   margin: 0;
   padding: 0;
@@ -61,14 +60,16 @@ flex-flow: row;
 /*min-height: 40vh;*/
 }
 .main  > article {
-background-color: red;
+background-color: skyblue;
 width: 70%;
 flex-grow: 2;
 }
 
 .container {
-  margin:0 20px 0 20px;
+  margin:0 10px 0 10px;
 }
+
+
 #anime {
 overflow: hidden;
 
@@ -93,12 +94,48 @@ position: relative;
 
 }
 
+.informationA {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
+.information1 {
+  width: 50%;
+  border: 1px solid black;
+  background-color: skyblue;
+  margin-right: 2px;
+}
+.information2 {
+  width: 50%;
+  border: 1px solid black;
+  background-color: skyblue;
+  color: black;
+}
+.informationB {
+  display: flex;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.information3 {
+  width: 50%;
+  margin-right: 2px;
+  border: 1px solid black;
+  background-color: skyblue;
+}
+.information4 {
+  width: 50%;
+  border: 1px solid black;
+  background-color: skyblue;
+  color: black;
+}
 footer {
 display: flex;
 background-color: green;
 min-height: 10%;
-margin: -1em;
+
 margin-top: 40px;
 padding: 0;
 }
@@ -130,16 +167,4 @@ transform: rotate(0) scale(1);
 -moz-animation: logo 5s;
 -o-animation: logo 5s;
 animation: logo 5s;
-}
-
-@media (max-width: 480px) {
-  header .main {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-@media (max-width: 1020px) {
-
 }

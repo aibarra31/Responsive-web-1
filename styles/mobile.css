@@ -1,146 +1,54 @@
+@media (max-width: 480px) {
+    .main, header {
+    width: 100%;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  ul {
+    display: flex;
+    flex-flow: column;
+    margin-top: -100px;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    visibility: hidden;
+  }
 
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: tan;
-  font-style: italic;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-header {
+section {
   display: flex;
+  flex-flow: column;
+  width: 100%;
 }
-
-header img {
-  flex: 1;
-
-}
-nav {
-  display: flex;
-  width: 80%;
-}
-.button {
-  flex: 1;
-  background-color: blue;
-  border: 1px solid black;
-  color: magenta;
-  padding: 0;
+.informationA {
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 100%;
-  margin: 4px 2px;
-  cursor: pointer;
+  width: 100%;
 }
 
-nav a {
-  -webkit-transition: -webkit-transform .5s,
-                      background-color 1s ease-in .5s;
-  -moz-transition: -moz-transform .5s,
-                      background-color 1s ease-in .5s;
-  -o-transition: -o-transform .5s,
-                      background-color 1s ease-in .5s;
-  transition: transform .5s,
-                   background-color 1s ease-in .5s;
+.information2 {
+  margin-top: 20px;
 }
-nav a:hover {
-  background-color: seagreen;
-  -webkit-transform:scale(1.2);
-         -moz-transform: scale(1.2);
-         -o-transform: scale(1.2);
-         -ms-transform:  scale(1.2);
-         transform: scale(1.2);
-}
-
-ul {
-display: flex;
-}
-ul li {
-  list-style-type: none;
-
-}
-
-section.main {
-display:flex;
-flex-flow: row;
-height: 70%;
-margin-bottom: 2em;
-border-bottom: 2em solid black;
-}
-
-.main article {
-background-color: red;
-width: 50%;
-flex: 1 0;
-}
-
-.anime {
-/*display: flex;*/
-border: 0 solid green;
-overflow: hidden;
-width: 50%;
-}
-
-.anime1 {
--moz-animation:anime 30s infinite;
--webkit-animation:anime 30s infinite;
-animation:anime 30s infinite;
-/*animation-direction: alternate-reverse;*/
-animation-delay: 5s;
-width: 2800px;
-margin: 0;
-padding: 0;
-position: relative;
-
-}
-
-.anime1 img {
-/*flex: 1 0 25%;*/
-max-width: 25%;
-height: 70vh;
-display: inline-block;
-margin-right:-.5em;
-margin-bottom: -1em;
-overflow: hidden;
-}
-
-footer {
-display: flex;
-background-color: green;
-min-height: 10%;
-}
-
-@keyframes anime {
-0%    { left:0; }
-10%   { left:0; }
-20% { left:-100%; }
-30% { left:-100%; }
-40%   { left:-200%; }
-50%   { left:-200%; }
-60% { left:-300%; }
-70% { left:-300%; }
-80% { left:0; }
+.information2 img{
+  width: 100%;
 }
 
 
-@keyframes logo {
-from {
-transform: rotate(0) scale(.5);
-right: 100% }
-50% {
-transform: rotate(-1040deg) scale(.5);
-right: 0;
+.information3 img{
+  width: 100%;
 }
-to {
-transform: rotate(0) scale(1);
-} }
-.logo {
--webkit-animation: logo 5s;
--moz-animation: logo 5s;
--o-animation: logo 5s;
-animation: logo 5s;
+.informationB {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.information4 {
+  margin-top: 20px;
+}
+ .information4 img{
+  width: 100%;
+  }
 }
