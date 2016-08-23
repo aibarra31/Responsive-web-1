@@ -5,7 +5,7 @@ body {
   background-color: tan;
   font-style: italic;
   height: 100vh;
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin: 0;
   padding: 0;
 }
@@ -19,8 +19,19 @@ nav a {
                 background-color 1s ease-in .5s;
 transition: transform .5s,
              background-color 1s ease-in .5s;
-
 }
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: #ff932d;
+	border-radius: 5px;
+	border: 1px solid #c95e00;
+}
+
 nav a:hover {
 background-color: seagreen;
 -webkit-transform:scale(1.2);
@@ -29,18 +40,6 @@ background-color: seagreen;
    -ms-transform:  scale(1.2);
    transform: scale(1.2);
 }
-
-nav a {
-	display: inline-block;
-	text-decoration: none;
-	font-size: 1.2em;
-	color: white;
-	padding: 10px 20px;
-	background: orange;
-	border-radius: 5px;
-	border: 1px solid black;
-}
-
 
 ul {
   display: flex;
@@ -51,20 +50,31 @@ ul li {
   list-style-type: none;
   flex-grow: 1;
 }
+
+section {
+  margin-top: 30px;
+}
 section.main {
 display:flex;
 flex-flow: row;
-min-height: 70%;
+/*min-height: 40vh;*/
 }
 .main  > article {
 background-color: red;
 width: 70%;
 flex-grow: 2;
 }
+
+div {
+  height: 30vh;
+}
+
 .anime {
-/*display: flex;*/
+display: flex;
 border: 0 solid green;
 overflow: hidden;
+/*justify-content: center;*/
+/*margin-left: 0;*/
 width: 50%;
 }
 .anime1 {
@@ -77,21 +87,42 @@ margin: 0;
 padding: 0;
 position: relative;
 }
-.anime1 img {
-/*flex: 1 0 25%;*/
-width: 25%;
-height: 70vh;
-display: inline-block;
-margin-right: -.5em;
-margin-bottom: -1em;
-overflow: hidden;
+.anime img {
+  width: 100%;
+  height: 100%;
 }
 
+.anime {
+  flex:0 0;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  background: red;
+  width: 60%;
+  left: 20%;
+}
+
+
+.anime1 {
+  list-style: none;
+  width: 300%;
+  position:relative;
+  -moz-animation: carousel 10s infinite;
+  -webkit-animation: carousel 10s infinite;
+  animation: carousel 10s infinite;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  background: blue;
+}
 footer {
 display: flex;
 background-color: green;
-min-height: 15%;
-margin-top: 1em;
+min-height: 10%;
+margin: -1em;
+margin-top: 40px;
+padding: 0;
 }
 @keyframes anime {
 0%    { left:0; }
