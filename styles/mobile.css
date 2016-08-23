@@ -1,3 +1,6 @@
+
+/*For Mobile Devices*/
+
 @media (max-width: 480px) {
     .main, header {
     width: 100%;
@@ -5,6 +8,8 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  /*Setting the unorder list to flow in a column*/
   ul {
     display: flex;
     flex-flow: column;
@@ -15,7 +20,7 @@
   .logo {
     visibility: hidden;
   }
-
+/*Fixing up the Section part of the body*/
 section {
   display: flex;
   flex-flow: column;
