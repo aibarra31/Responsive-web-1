@@ -66,56 +66,34 @@ width: 70%;
 flex-grow: 2;
 }
 
-div {
-  height: 30vh;
+.container {
+  margin:0 20px 0 20px;
 }
-
-.anime {
-display: flex;
-border: 0 solid green;
+#anime {
 overflow: hidden;
-/*justify-content: center;*/
-/*margin-left: 0;*/
-width: 50%;
+
+
 }
-.anime1 {
+#anime figure {
 -moz-animation:anime 10s infinite;
 -webkit-animation:anime 10s infinite;
 animation:anime 10s infinite;
-animation-direction: alternate-reverse;
-width: 1000px;
+width: 400%;
+display: flex;
+/*flex: 1;*/
 margin: 0;
 padding: 0;
+
 position: relative;
 }
-.anime1 img {
-  width: 50px;
-  /*height: 100%;*/
-}
+#anime img {
+  flex: 1 1 24%;
+  width: 24%;
+  height: 400px;
 
-.anime {
-  flex:0 0;
-  padding: 0;
-  margin: 0 auto;
-  overflow: hidden;
-  background: red;
-  width: 50%;
-  left: 10%;
 }
 
 
-/*.anime1 {
-  list-style: none;
-  width: 300%;
-  position:relative;
-  -moz-animation: anime 10s infinite;
-  -webkit-animation: anime 10s infinite;
-  animation: carousel 10s infinite;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}*/
 footer {
 display: flex;
 background-color: green;
