@@ -1,0 +1,29 @@
+
+Alish's notes on Pham's project
+
+    Your logo was not being taken off when re-sized to a phone.
+
+    Great job on the background but it made the page over crowded and you could only see bits and pieces. I tried making the background
+    transparent and different color to the text but it didn't work
+
+    You had great animation for the logo
+
+    The class botton you didn't keep on your css but kept it in your HTML
+
+    You needed to add padding to your paragraphs and body.
+
+    Your footer needed to be centered
+
+    It would have worked better if your text filled in the dead space around your pictures.
+
+    I added borders originally to your paragraphs then took them off
+
+    Great hover animations on your navigation, you know how to use them well.
+
+    The color scheme stayed true to anime theme, especially with the background, however next time I would suggest brighter colors
+
+    I don't think that you needed to specify Text decoration in your navigation buttons or the list style type
+
+    #anime img you didn't need to specify the width @24%
+
+    Padding left on information b was not needed but I would have adjusted the padding on all
